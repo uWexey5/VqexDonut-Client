@@ -3,9 +3,9 @@
 	"id": "vqex-donut",
 	"version": "${version}",
 	"name": "Vqex Donut",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "VqexDonut Client Mod",
 	"authors": [
-		"Me!"
+		"Vqex"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -13,13 +13,13 @@
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/vqex-donut/icon.png",
-	"environment": "*",
+	"environment": "client",
 	"entrypoints": {
 		"main": [
 			"com.vqexdonut.VqexDonut"
 		],
 		"client": [
-			"com.vqexdonut.client.VqexDonutClient"
+			"com.vqexdonut.VqexDonutClient"
 		]
 	},
 	"mixins": [
