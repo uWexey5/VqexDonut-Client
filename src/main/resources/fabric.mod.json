@@ -3,7 +3,7 @@
 	"id": "vqex-donut",
 	"version": "${version}",
 	"name": "Vqex Donut",
-	"description": "VqexDonut Client Mod",
+	"description": "VqexDonut 1.21.4 Client Mod",
 	"authors": [
 		"Vqex"
 	],
@@ -13,13 +13,13 @@
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/vqex-donut/icon.png",
-	"environment": "client",
+	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"com.vqexdonut.VqexDonut"
 		],
 		"client": [
-			"com.vqexdonut.VqexDonutClient"
+			"com.vqexdonut.client.VqexDonutClient"
 		]
 	},
 	"mixins": [
@@ -30,9 +30,9 @@
 		}
 	],
 	"depends": {
-		"fabricloader": ">=0.19.5",
-		"minecraft": "~26.1",
-		"java": ">=25",
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
 		"fabric-api": "*"
 	}
 }
