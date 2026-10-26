@@ -1,10 +1,14 @@
-package com.vqexdonut.client;
+package com.vqexdonut.client.module;
 
-import net.fabricmc.api.ClientModInitializer;
+public enum Category {
+    COMBAT("Combat"),
+    RENDER("Render"),
+    HUD("HUD"),
+    UTILITY("Utility");
 
-public class VqexDonutClient implements ClientModInitializer {
-	@Override
-	public void onInitializeClient() {
-		// This entrypoint is suitable for setting up client-specific logic, such as rendering.
-	}
+    public final String name;
+
+    Category(String name) {
+        this.name = name;
+    }
 }
